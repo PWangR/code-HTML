@@ -1,0 +1,27 @@
+.card-me{
+ position: relative;
+}
+
+.card-body-me{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+.card-title{
+    color: red;
+}
+.card-text{
+    color: green;
+}
+
+
+.card-foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

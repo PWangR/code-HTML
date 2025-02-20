@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY INFORMATION</title>
+    <title>Thông Tin Cá Nhân</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Noto Sans', sans-serif;
             background: linear-gradient(135deg, #0a1931, #1e3c72);
             color: white;
             display: flex;
@@ -19,16 +19,17 @@
         }
 
         .container {
-            width: 800px;
-            background: #f0f8ff;
-            padding: 20px;
+            width: 850px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             display: flex;
             flex-direction: column;
             align-items: center;
             animation: fadeIn 1s ease-in-out;
-            color: #0a1931;
+            color: #333;
+            font-size: 18px;
         }
 
         @keyframes fadeIn {
@@ -39,19 +40,19 @@
         .top-section {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 25px;
             width: 100%;
         }
 
         .avatar-box {
             flex: 1;
-            max-width: 180px;
+            max-width: 200px;
         }
 
         .avatar {
             width: 100%;
-            border-radius: 15px;
-            border: 3px solid #1e3c72;
+            border-radius: 50%;
+            border: 4px solid #1e3c72;
             transition: transform 0.3s ease-in-out;
         }
 
@@ -61,59 +62,32 @@
 
         .bio {
             flex: 2;
-            background: #e0f7fa;
+            background: #e3f2fd;
             padding: 15px;
             border-radius: 10px;
-            animation: slideUp 0.8s ease-in-out forwards;
         }
 
         .content {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 20px;
             justify-content: space-between;
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
         .section {
-            background: #e0f7fa;
+            background: #f1f8ff;
             padding: 15px;
             border-radius: 10px;
-            flex: 1 1 calc(50% - 10px);
-            animation: slideUp 0.8s ease-in-out forwards;
-        }
-
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .lists {
-            display: flex;
-            gap: 15px;
-        }
-
-        .list-box {
-            flex: 1;
-            background: #b3e5fc;
-            padding: 10px;
-            border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .list-box:hover {
-            transform: scale(1.05);
+            flex: 1 1 calc(50% - 15px);
         }
 
         .goals-links {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             width: 100%;
-        }
-
-        .goals {
-            flex: 1;
+            margin-top: 20px;
         }
 
         .links {
@@ -123,8 +97,8 @@
 
         .link-btn {
             display: inline-block;
-            margin: 5px;
-            padding: 10px 20px;
+            margin: 8px;
+            padding: 12px 24px;
             font-size: 16px;
             font-weight: bold;
             color: white;
@@ -134,46 +108,38 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 10px;
         }
 
         .facebook {
             background: #1877f2;
         }
-
         .facebook:hover {
             background: #125ab6;
             transform: translateY(-3px);
         }
 
         .github {
-            background: #0d1117;
+            background: #000;
         }
-
         .github:hover {
-            background: #222;
+            background: #444;
             transform: translateY(-3px);
         }
 
         @media (max-width: 768px) {
-    .links {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
+            .top-section, .goals-links {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
 
-    .link-btn {
-        width: 80%;
-        max-width: 300px;
-        justify-content: center;
-        padding: 12px;
-        font-size: 18px;
-    }
-
-}
-
+            .link-btn {
+                width: 80%;
+                max-width: 250px;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -183,49 +149,36 @@
                 <img src="./img/about_me.jpg" alt="Ảnh đại diện" class="avatar">
             </div>
             <div class="bio">
-                <h2>My Bio</h2>
+                <h2>Giới Thiệu</h2>
                 <p><strong>Họ và tên:</strong> Dương Phú Quảng</p>
-                <p><strong>Giới tính:</strong> Nam</p>
-                <p><strong>Năm sinh:</strong> 04/10/2004</p>
+                <p><strong>Năm sinh:</strong> 2004</p>
                 <p><strong>Quê quán:</strong> Quảng Bình, Việt Nam</p>
-                <p><strong>Tình trạng hôn nhân:</strong> Có người yêu</p>
+                <p><strong>Chuyên ngành:</strong> Công nghệ thông tin</p>
             </div>
         </div>
 
         <div class="content">
-            <div class="section about">
-                <h2>About Me</h2>
-                <p>Tôi là một sinh viên khóa 64 học tại Khoa CNTT trường đại học Nha Trang.</p>
+            <div class="section">
+                <h2>Về Tôi</h2>
+                <p>Tôi là một sinh viên đam mê công nghệ và yêu thích lập trình.</p>
             </div>
-
-            <div class="section lists">
-                <div class="list-box">
-                    <h3>Likes</h3>
-                    <ul>
-                        <li>Chơi game</li>
-                        <li>Lắp mô hình</li>
-                        <li>Nuôi cá</li>
-                        <li>Đi cà phê</li>
-                    </ul>
-                </div>
-                <div class="list-box">
-                    <h3>Dislikes</h3>
-                    <ul>
-                        <li>Tiếng ồn</li>
-                        <li>Kẹt xe</li>
-                        <li>Nhiều thứ khác</li>
-                    </ul>
-                </div>
+            <div class="section">
+                <h2>Sở Thích</h2>
+                <ul>
+                    <li>Chơi game</li>
+                    <li>Nuôi cá</li>
+                    <li>Khám phá công nghệ mới</li>
+                </ul>
             </div>
         </div>
 
         <div class="goals-links">
-            <div class="goals">
-                <h2>My Goal this Year</h2>
-                <p>Phát triển bản thân và hoàn thành tốt các mục tiêu đặt ra.</p>
+            <div class="section">
+                <h2>Mục Tiêu</h2>
+                <p>Hoàn thiện kỹ năng lập trình và tham gia các dự án thực tế.</p>
             </div>
             <div class="links">
-                <h2>My Links</h2>
+                <h2>Liên Kết</h2>
                 <a href="https://www.facebook.com/Quangr2004" class="link-btn facebook"><i class="fab fa-facebook"></i> Facebook</a>
                 <a href="https://github.com/PWangR" class="link-btn github"><i class="fab fa-github"></i> GitHub</a>
             </div>
